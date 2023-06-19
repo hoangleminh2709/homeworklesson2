@@ -1,24 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from './card';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <input type="text"
+      placeholder="Enter your task here..."
+      className="input"/>
+    <Card text="Clean up bedroom"/>
+    <Card text="Buy some milk"/>
+    <Card text="Jogging"/>
+    <Card text="Learn React"/>
+    <Card text="Doing Exercises"/>
+    <div className="App1">
+      <p className="todolist">5 tasks left!</p>
+      <p className="MindX">Mindx Todolist</p>
+      </div>
+    
+      </div>
   );
 }
 
